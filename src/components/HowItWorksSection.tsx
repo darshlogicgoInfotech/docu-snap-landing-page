@@ -9,28 +9,28 @@ const HowItWorksSection = () => {
       title: 'Open the App',
       description: 'Launch Do Scan and tap the scan button to get started',
       icon: Smartphone,
-      color: 'bg-blue-100 text-blue-600'
+      color: 'bg-blue-50 text-[#2147A8]'
     },
     {
       step: '02', 
       title: 'Scan or Upload',
       description: 'Capture documents with your camera or upload from gallery',
       icon: ScanLine,
-      color: 'bg-green-100 text-green-600'
+      color: 'bg-blue-50 text-[#2147A8]'
     },
     {
       step: '03',
       title: 'Auto-Crop & Enhance',
       description: 'AI automatically crops and enhances your document quality',
       icon: Crop,
-      color: 'bg-purple-100 text-purple-600'
+      color: 'bg-blue-50 text-[#2147A8]'
     },
     {
       step: '04',
       title: 'Save or Share',
       description: 'Export as PDF, save to cloud, or share instantly',
       icon: Save,
-      color: 'bg-orange-100 text-orange-600'
+      color: 'bg-blue-50 text-[#2147A8]'
     }
   ];
 
@@ -53,7 +53,7 @@ const HowItWorksSection = () => {
                 <div className={`w-16 h-16 ${step.color} rounded-2xl mx-auto flex items-center justify-center mb-4`}>
                   <step.icon className="h-8 w-8" />
                 </div>
-                <div className="absolute -top-2 -right-2 bg-brand-600 text-white text-sm font-bold w-8 h-8 rounded-full flex items-center justify-center">
+                <div className="absolute -top-2 -right-2 text-white text-sm font-bold w-8 h-8 rounded-full flex items-center justify-center" style={{ backgroundColor: '#2147A8' }}>
                   {step.step}
                 </div>
               </div>
@@ -73,7 +73,7 @@ const HowItWorksSection = () => {
           <div className="inline-flex items-center space-x-2 text-sm text-gray-500">
             {[1, 2, 3].map((_, i) => (
               <div key={i} className="flex items-center">
-                <div className="w-2 h-2 bg-brand-600 rounded-full" />
+                <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#2147A8' }} />
                 {i < 2 && <div className="w-8 h-px bg-gray-300 mx-2" />}
               </div>
             ))}

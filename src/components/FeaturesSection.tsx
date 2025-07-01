@@ -8,31 +8,31 @@ const FeaturesSection = () => {
       title: 'Auto-Cropping',
       description: 'Intelligent edge detection automatically crops your documents to perfection',
       icon: Crop,
-      gradient: 'from-blue-500 to-blue-600'
+      gradient: 'from-[#2147A8] to-[#1d3d96]'
     },
     {
       title: 'OCR Text Recognition',
       description: 'Extract and search text from your scanned documents with high accuracy',
       icon: Type,
-      gradient: 'from-green-500 to-green-600'
+      gradient: 'from-[#2147A8] to-[#1d3d96]'
     },
     {
       title: 'Multi-page PDF Support',
       description: 'Combine multiple scans into a single professional PDF document',
       icon: FileText,
-      gradient: 'from-purple-500 to-purple-600'
+      gradient: 'from-[#2147A8] to-[#1d3d96]'
     },
     {
       title: 'Folder Organization',
       description: 'Keep your documents organized with customizable folder structures',
       icon: FolderOpen,
-      gradient: 'from-orange-500 to-orange-600'
+      gradient: 'from-[#2147A8] to-[#1d3d96]'
     },
     {
       title: 'Secure Cloud Backup',
       description: 'Your documents are safely stored and synchronized across all devices',
       icon: Shield,
-      gradient: 'from-red-500 to-red-600'
+      gradient: 'from-[#2147A8] to-[#1d3d96]'
     }
   ];
 
@@ -67,14 +67,14 @@ const FeaturesSection = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <Card className="p-8 bg-gradient-to-r from-brand-500 to-brand-600 text-white">
+          <Card className="p-8 text-white" style={{ background: `linear-gradient(to right, #2147A8, #1d3d96)` }}>
             <h3 className="text-2xl font-bold mb-4">Ready to get started?</h3>
-            <p className="text-brand-100 mb-6">Join thousands of users who trust Do Scan for their document needs</p>
+            <p className="text-blue-100 mb-6">Join thousands of users who trust Do Scan for their document needs</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-8 py-3 bg-white text-brand-600 font-semibold rounded-lg hover:bg-gray-100 transition-colors">
+              <button className="px-8 py-3 bg-white font-semibold rounded-lg hover:bg-gray-100 transition-colors" style={{ color: '#2147A8' }}>
                 Download for iOS
               </button>
-              <button className="px-8 py-3 bg-white text-brand-600 font-semibold rounded-lg hover:bg-gray-100 transition-colors">
+              <button className="px-8 py-3 bg-white font-semibold rounded-lg hover:bg-gray-100 transition-colors" style={{ color: '#2147A8' }}>
                 Download for Android
               </button>
             </div>

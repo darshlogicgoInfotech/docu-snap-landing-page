@@ -10,7 +10,7 @@ const ReviewsSection = () => {
       rating: 5,
       comment: 'Do Scan has revolutionized how I handle receipts and invoices. The OCR feature is incredibly accurate and saves me hours of manual data entry.',
       avatar: 'SJ',
-      color: 'bg-blue-500'
+      color: '#2147A8'
     },
     {
       name: 'Michael Chen',
@@ -18,7 +18,7 @@ const ReviewsSection = () => {
       rating: 5,
       comment: 'Perfect for scanning lecture notes and textbook pages. The auto-crop feature works flawlessly, and the PDF export is exactly what I need.',
       avatar: 'MC',
-      color: 'bg-green-500'
+      color: '#2147A8'
     },
     {
       name: 'Emily Rodriguez',
@@ -26,7 +26,7 @@ const ReviewsSection = () => {
       rating: 5,
       comment: 'Clean interface, fast processing, and excellent quality scans. The folder organization keeps all my client documents perfectly sorted.',
       avatar: 'ER',
-      color: 'bg-purple-500'
+      color: '#2147A8'
     }
   ];
 
@@ -56,7 +56,7 @@ const ReviewsSection = () => {
               </p>
               
               <div className="flex items-center">
-                <div className={`w-12 h-12 ${review.color} rounded-full flex items-center justify-center text-white font-semibold`}>
+                <div className="w-12 h-12 rounded-full flex items-center justify-center text-white font-semibold" style={{ backgroundColor: review.color }}>
                   {review.avatar}
                 </div>
                 <div className="ml-4">

@@ -67,11 +67,11 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				brand: {
-					50: '#f0f9ff',
-					100: '#e0f2fe', 
-					500: '#3b82f6',
-					600: '#2563eb',
-					700: '#1d4ed8'
+					50: '#f0f4ff',
+					100: '#dde6ff', 
+					500: '#2147A8',
+					600: '#1d3d96',
+					700: '#193584'
 				}
 			},
 			borderRadius: {

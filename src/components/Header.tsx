@@ -20,7 +20,7 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
-              <Smartphone className="h-8 w-8 text-brand-600" />
+              <Smartphone className="h-8 w-8" style={{ color: '#2147A8' }} />
               <span className="ml-2 text-xl font-bold text-gray-900">Do Scan</span>
             </div>
           </div>
@@ -32,7 +32,10 @@ const Header = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-600 hover:text-brand-600 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                  className="text-gray-600 hover:opacity-75 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                  style={{ '--tw-text-opacity': 1 }}
+                  onMouseEnter={(e) => e.target.style.color = '#2147A8'}
+                  onMouseLeave={(e) => e.target.style.color = ''}
                 >
                   {item.name}
                 </a>
@@ -42,11 +45,11 @@ const Header = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:block">
-            <Button variant="outline" className="mr-3">
+            <Button variant="outline" className="mr-3 border-[#2147A8] text-[#2147A8] hover:bg-[#2147A8] hover:text-white">
               <LogIn className="h-4 w-4 mr-2" />
               Login
             </Button>
-            <Button>
+            <Button className="bg-[#2147A8] hover:bg-[#1d3d96] text-white">
               Download App
             </Button>
           </div>
@@ -71,18 +74,18 @@ const Header = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-600 hover:text-brand-600 block px-3 py-2 text-base font-medium"
+                  className="text-gray-600 hover:text-[#2147A8] block px-3 py-2 text-base font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
                 </a>
               ))}
               <div className="pt-4 space-y-2">
-                <Button variant="outline" className="w-full">
+                <Button variant="outline" className="w-full border-[#2147A8] text-[#2147A8] hover:bg-[#2147A8] hover:text-white">
                   <LogIn className="h-4 w-4 mr-2" />
                   Login
                 </Button>
-                <Button className="w-full">
+                <Button className="w-full bg-[#2147A8] hover:bg-[#1d3d96] text-white">
                   Download App
                 </Button>
               </div>

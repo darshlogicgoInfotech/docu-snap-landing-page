@@ -53,7 +53,7 @@ const FAQSection = () => {
               value={`item-${index}`}
               className="bg-white rounded-lg border border-gray-200 px-6"
             >
-              <AccordionTrigger className="text-left font-semibold text-gray-900 hover:text-brand-600">
+              <AccordionTrigger className="text-left font-semibold text-gray-900" style={{ '--hover-color': '#2147A8' }}>
                 {faq.question}
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 leading-relaxed">
@@ -65,7 +65,7 @@ const FAQSection = () => {
 
         <div className="mt-12 text-center">
           <p className="text-gray-600 mb-4">Still have questions?</p>
-          <button className="text-brand-600 font-semibold hover:text-brand-700 transition-colors">
+          <button className="font-semibold hover:opacity-75 transition-colors" style={{ color: '#2147A8' }}>
             Contact our support team →
           </button>
         </div>

@@ -30,7 +30,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <div className="flex items-center mb-6">
-              <Smartphone className="h-8 w-8 text-brand-400" />
+              <Smartphone className="h-8 w-8" style={{ color: '#2147A8' }} />
               <span className="ml-2 text-2xl font-bold">Do Scan</span>
             </div>
             <p className="text-gray-400 mb-6 max-w-md leading-relaxed">
@@ -42,7 +42,10 @@ const Footer = () => {
                 <a
                   key={social.name}
                   href={social.href}
-                  className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-brand-600 transition-colors"
+                  className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:opacity-75 transition-colors"
+                  style={{ '--hover-bg': '#2147A8' }}
+                  onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#2147A8'}
+                  onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#374151'}
                   aria-label={social.name}
                 >
                   <social.icon className="h-5 w-5" />
