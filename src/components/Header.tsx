@@ -32,10 +32,7 @@ const Header = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-600 hover:opacity-75 px-3 py-2 text-sm font-medium transition-colors duration-200"
-                  style={{ '--tw-text-opacity': 1 }}
-                  onMouseEnter={(e) => e.target.style.color = '#2147A8'}
-                  onMouseLeave={(e) => e.target.style.color = ''}
+                  className="text-gray-600 hover:text-[#2147A8] px-3 py-2 text-sm font-medium transition-colors duration-200"
                 >
                   {item.name}
                 </a>
